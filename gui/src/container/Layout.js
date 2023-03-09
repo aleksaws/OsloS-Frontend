@@ -3,6 +3,7 @@ import { Breadcrumb, Layout, Menu, theme } from 'antd';
 
 const { Header, Content, Footer } = Layout;
 
+
 const CustomLayout = (props) => {
     return (
         <Layout className="layout">
