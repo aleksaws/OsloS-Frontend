@@ -6,25 +6,57 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 const CustomNavbar = (props) => {
   return (
     
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="dark" variant ="dark" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home">Oslo Satsingen</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <NavDropdown title="Kart" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Oversiktskart (delbydel)</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Oversiktskart (grunnkrets)</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Tilbudsoversikt" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/oversikt/idrett/">Idrett</NavDropdown.Item>
+              <NavDropdown.Item href="/oversikt/organisasjon/">Organisasjoner</NavDropdown.Item>
+              <NavDropdown.Item href="/oversikt/fritid/">Fritid</NavDropdown.Item>
+              <NavDropdown.Item href="/oversikt/skole/">Skole</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
+            <NavDropdown title="Bydelsoversikt" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/oversikt/idrett/">Idrett</NavDropdown.Item>
+              <NavDropdown.Item href="/oversikt/organisasjon/">Organisasjoner</NavDropdown.Item>
+              <NavDropdown.Item href="/oversikt/fritid/">Fritid</NavDropdown.Item>
+              <NavDropdown.Item href="/oversikt/skole/">Skole</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Område oversikt" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/oversikt/idrett/">Idrett</NavDropdown.Item>
+              <NavDropdown.Item href="/oversikt/organisasjon/">Organisasjoner</NavDropdown.Item>
+              <NavDropdown.Item href="/oversikt/fritid/">Fritid</NavDropdown.Item>
+              <NavDropdown.Item href="/oversikt/skole/">Skole</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Område oversikt" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/oversikt/idrett/">Idrett</NavDropdown.Item>
+              <NavDropdown.Item href="/oversikt/organisasjon/">Organisasjoner</NavDropdown.Item>
+              <NavDropdown.Item href="/oversikt/fritid/">Fritid</NavDropdown.Item>
+              <NavDropdown.Item href="/oversikt/skole/">Skole</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="/admin/">Login</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,14 +1,8 @@
 import React from "react";
 import axios from "axios";
-import Idrettslag from "../components/Idrettslag";
-import Idrettslag2 from "../components/Idrettslag2";
 
-const data = [
-    {    title: 'Ant Design Title 1',  },
-    {    title: 'Ant Design Title 2',  },
-    {    title: 'Ant Design Title 3',  },
-    {    title: 'Ant Design Title 4',  },
-  ];
+import OversiktsTable from "../OversiktsTable";
+
 
 class IdrettslagList extends React.Component {
 
@@ -28,7 +22,7 @@ class IdrettslagList extends React.Component {
     
     render(){
         return (
-            <Idrettslag2 data={this.state.idrettslag}/>
+            <OversiktsTable data={this.state.idrettslag}/>
         );
     }
 }

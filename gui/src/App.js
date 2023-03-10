@@ -1,24 +1,16 @@
-import './App.css';
-import 'antd/dist/reset.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
-import Container from 'react-bootstrap/Container';
-
-
-import { Component } from 'react';
-
 import CustomLayout from './container/Layout';
-import CustomLayout2 from './container/Layout2';
-import IdrettslagList from './container/IdrettslagListView';
+import IdrettslagList from './components/idrettslag/ListView';
+import SkoleList from './components/skole/ListView';
 
 function App() {
   return (
     <div className="App">
-      <Container>
-        <CustomLayout2>
+        <CustomLayout>
           <IdrettslagList />
-        </CustomLayout2>
-      </Container>
+          <SkoleList />
+        </CustomLayout>
     </div>
   );
 }
