@@ -4,14 +4,14 @@ import axios from "axios";
 import OversiktsTable from "../OversiktsTable";
 
 
-class IdrettslagList extends React.Component {
+class OrganisasjonList extends React.Component {
 
     state = {
         data:[]
     }
 
     componentDidMount(){
-        axios.get("http://127.0.0.1:8000/api/idrettslag/get/")
+        axios.get("http://127.0.0.1:8000/api/organisasjon/get/")
             .then(res => {
                 this.setState({
                     data: res.data
@@ -26,4 +26,4 @@ class IdrettslagList extends React.Component {
     }
 }
 
-export default IdrettslagList;
+export default OrganisasjonList;

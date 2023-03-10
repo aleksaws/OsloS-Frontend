@@ -19,7 +19,7 @@ const OversiktsTable = (props) => {
         <td>{item.navn}</td>
         <td>{item.bydel}</td>
         <td>{item.delbydel}</td>
-        <td><a href={item.nettside === '' ? "#" :item.nettside} target="_blank"><ArrowUpRightSquare color={item.nettside === '' ? "grey" :"black" }/></a></td>
+        <td><a href={item.nettside === '' ? "#" :item.nettside} rel="noreferrer" target="_blank"><ArrowUpRightSquare color={item.nettside === '' ? "grey" :"black" }/></a></td>
       </tr>
         ))}
     </tbody>
@@ -27,7 +27,5 @@ const OversiktsTable = (props) => {
   
   );
 }
-
-
 
 export default OversiktsTable;

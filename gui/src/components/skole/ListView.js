@@ -7,22 +7,21 @@ import OversiktsTable from "../OversiktsTable";
 class SkoleList extends React.Component {
 
     state = {
-        skoler:[]
+        data:[]
     }
 
     componentDidMount(){
         axios.get("http://127.0.0.1:8000/api/skole/get/")
             .then(res => {
                 this.setState({
-                    skoler: res.data
+                    data: res.data
                 });
-                console.log(res.data)
             });
     }
     
     render(){
         return (
-            <OversiktsTable data={this.state.skoler}/>
+            <OversiktsTable data={this.state.data}/>
         );
     }
 }
