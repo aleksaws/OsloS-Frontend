@@ -1,26 +1,29 @@
 import React from "react";
 import axios from "axios";
 
-import OversiktsTable from "../DataOversiktPerTypeTable";
+import DataOversiktPerTypeTable from "../components/DataOversiktPerTypeTable";
 
 
-export default class FritidList extends React.Component {
+export default class DataOversiktPerType extends React.Component {
+
     state = {
         data:[]
     }
 
     componentDidMount(){
         axios.get(this.props.apiurl)
+        
             .then(res => {
                 this.setState({
                     data: res.data
                 });
+                console.log(this.props.apiurl)
             });
     }
     
     render(){
         return (
-            <OversiktsTable data={this.state.data}/>
+            <DataOversiktPerTypeTable data={this.state.data}/>
         );
     }
 }

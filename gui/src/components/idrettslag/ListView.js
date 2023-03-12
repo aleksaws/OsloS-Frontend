@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-import OversiktsTable from "../OversiktsTable";
+import OversiktsTable from "../DataOversiktPerTypeTable";
 
 
 class IdrettslagList extends React.Component {
@@ -11,7 +11,7 @@ class IdrettslagList extends React.Component {
     }
 
     componentDidMount(){
-        axios.get("http://127.0.0.1:8000/api/idrettslag/get/")
+        axios.get(this.props.apiurl)
             .then(res => {
                 this.setState({
                     data: res.data

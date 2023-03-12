@@ -1,17 +1,17 @@
+import { Outlet, Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import CustomNavbar from '../components/Navbar';
 
 
-
-const CustomLayout = (props) => {
+const Layout = () => {
   return (
     <>
       <CustomNavbar />
       <Container>
-        {props.children}
+        <Outlet />
       </Container>
     </>
-  );
-}
+  )
+};
 
-export default CustomLayout;
+export default Layout;

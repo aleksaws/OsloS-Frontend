@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from "react-router-dom";
 
 const CustomNavbar = (props) => {
   return (
@@ -17,14 +18,10 @@ const CustomNavbar = (props) => {
               <NavDropdown.Item href="#action/3.2">Oversiktskart (grunnkrets)</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Tilbudsoversikt" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/oversikt/idrett/">Idrett</NavDropdown.Item>
-              <NavDropdown.Item href="/oversikt/organisasjon/">Organisasjoner</NavDropdown.Item>
-              <NavDropdown.Item href="/oversikt/fritid/">Fritid</NavDropdown.Item>
-              <NavDropdown.Item href="/oversikt/skole/">Skole</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/oversikt/idrett/">Idrett</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/oversikt/organisasjon/">Organisasjoner</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/oversikt/fritid/">Fritid</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/oversikt/skole/">Skole</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Bydelsoversikt" id="basic-nav-dropdown">
               <NavDropdown.Item href="/oversikt/idrett/">Idrett</NavDropdown.Item>
