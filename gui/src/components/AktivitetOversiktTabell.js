@@ -2,7 +2,7 @@ import {Table} from 'react-bootstrap';
 import React from 'react';
 import { ArrowUpRightSquare } from 'react-bootstrap-icons';
 
-const DataOversiktPerTypeTable= (props) => {
+const AktivitetOversiktTabell= (props) => {
   return (
     <Table striped bordered hover size="sm">
     <thead>
@@ -28,4 +28,4 @@ const DataOversiktPerTypeTable= (props) => {
   );
 }
 
-export default DataOversiktPerTypeTable;
+export default AktivitetOversiktTabell;
